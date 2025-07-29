@@ -1,0 +1,177 @@
+body{
+    background-color: #1111;
+}
+.cinza{
+    color: #989696;
+    font-size: 35px;
+}#bicicleta{
+    background-color: #111111;
+}
+.container{
+    height: auto !important;
+}
+.imagens{
+    gap: 20px !important;
+    position: relative;
+}
+.coluna-1::before{
+    display: none !important;
+}
+.fotos-secundaria{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+}
+.fotos-secundaria img{
+    padding-top: 20px;
+    max-width: 270px;
+    max-height: 212px;
+}
+.valor-bike{
+    line-height: 32px;
+    color: #c3c1c1 !important;
+    font-size: 22px;
+    font-weight: 400 !important;
+    padding: 0 22px 22px 22px !important;
+}
+.coluna-2 a{
+    position: static !important;
+    display: inline-block;
+    width: auto !important;
+    border-radius: 5px;
+    background-color: #f4ad14 !important;
+}
+.coluna-2 a::after{
+    display: none !important;
+}
+.link-compra{
+    padding: 15px 25px;
+    position: relative;
+}
+.estoque{
+    position: absolute;
+    display: inline-block;
+    width: auto;
+    padding: 0px 15px;
+    margin-top: 5px;
+    top: 0;
+}
+.estoque p{
+    background-color: #000;
+    color: #979595;
+    padding: 5px;
+    margin-top: 5px;
+}
+.estoque img{
+    padding-right: 10px;
+}
+/* INFORMAÇÔES */
+.titulo-informacoes{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 11px !important;
+    font-weight: bold;
+    padding: 20px 20px 10px 25px;
+    letter-spacing: 1px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    gap: 20px;
+    max-width: 500px;
+    background-color: #000;
+    margin-left: 20px;
+}
+.grid h5{
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 0;
+}
+.grid p{
+    color: #989696;
+    padding: 0;
+}
+.ficha{
+    padding-bottom: 4rem;
+}
+.ficha ul{
+    background-color: #000;
+    max-width: 500px;
+    padding: 20px !important;
+    margin-left: 25px;
+}
+.ficha li{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #1f1f1f;
+    padding: 4px 0 !important;
+    font-size: 15px !important;
+    color: #c3c1c1 !important;
+}
+/* MAIS BIKES */
+#bikes{
+    display: flex !important;
+    margin: 0px auto 35px auto !important;
+    padding-top: 40px !important;
+    padding-bottom: 100px !important;
+}
+#bikes a{
+    text-decoration: none !important;
+}
+#bikes .nome-bike{
+    color: #000;
+}
+#bikes .titulos{
+    color: #000 !important;
+    background-color: #fff !important;
+    padding-left: 0% !important;
+}
+#bikes .imagens{
+    display: flex;
+    flex-direction: column;
+    gap: 0 !important;
+    border: 1px solid #c3c1c1;
+    border-radius: 5px;
+}
+.title .titulos{
+    background-color: #fff !important;
+    color: #000 !important;
+    padding-bottom: 0 !important;
+}
+#bikes  .imagens .valor-bike{
+    color: #6f6c6c !important;
+}
+/* SEGURO */
+#seguro{
+    background: linear-gradient(to bottom, #fff 20%, #1f1f1f 0%);
+}
+#seguro .container{
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 780px !important;
+}
+#seguro .coluna-2{
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    padding: 20px;
+}
+#seguro .coluna-2 .titulos{
+    padding: 0 !important;
+    background: none !important;
+}
+#seguro .coluna-1 img{
+    height: 850px !important;
+    object-fit: cover !important;
+}
+#seguro .valor-bike{
+    padding: 25px 0 15px 0 !important;
+}
+#seguro .link-compra{
+    padding: 0 !important;
+}
+#footer{
+    padding-top: 9rem !important;
+}

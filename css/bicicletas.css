@@ -1,0 +1,122 @@
+#parte-1{
+    background-color: #000;
+    color: #fff;
+    height: 200px;
+}
+#parte-1 .titulos{
+    margin: 0;
+    padding: 3rem 0 0 1rem;
+}
+.cinza{
+    font-size: 25px;
+    color: #9c9c9c;
+    text-transform: uppercase;
+    margin-right: 9rem;
+    font-weight: bold;
+}
+/* PARTE 2 */
+#bikes{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 6rem;
+    padding-top: 70px;
+}
+.imagens{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.coluna-1{
+    position: relative;
+}
+.coluna-1::before{
+    content: "R$ 2999";
+    width: 100px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 1;
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    font-size: 25px;
+    top:0;
+    right: 0;
+}
+.coluna-1 img{
+    width: 100%;
+    height: 440px;
+    object-position: center;
+}
+.nome-bike{
+    padding: 20px;
+}
+.valor-bike{
+    max-width: 500px;
+    padding: 0 22px;
+}
+.coluna-2{
+    position: relative;
+}
+.coluna-2 ul{
+    padding: 25px 0 0 15px;
+}
+.coluna-2 li{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 20px;
+    color: #636262;
+    position: relative;
+}
+.coluna-2 li img{
+    width: 30px;
+    padding-right: 10px;
+}
+.coluna-2 a{
+    position: absolute;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 16px 32px;
+    width: 130px;
+    color: #000;
+    background-color: #f4bb0e;
+    text-align: center;
+    right: 80px;
+    top:65%;
+    transition: .3s;
+}
+.coluna-2 a:hover{
+    background-color: #fca206 !important;
+}
+.coluna-2 a::after{
+    content: "";
+    background-image: url(../img/icones/seta.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 20px;
+    right: 15px;
+}
+.coluna-2 a:hover::after{
+    content: "";
+    background-image: url(../img/icones/seta.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 20px;
+    right: 13px;
+    transition: .3s;
+}
+.imagens::before{
+    display: none !important;
+}
+.bgdark{
+    color: #fff;
+    background:linear-gradient(to right, #fff 30%,#000 0%);
+    width: 1200px !important;
+    padding: 60px 0;
+}
