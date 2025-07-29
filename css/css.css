@@ -3,58 +3,69 @@
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 /* HEADER */
 #header {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     padding: 2rem 0;
     background-color: #000;
 }
+
 img {
     max-width: 100%;
 }
+
 .links {
     display: flex;
     list-style: none;
     gap: 3rem;
     font-size: 1.4rem;
 }
+
 .itens {
     transition: 0.4s;
     position: relative;
 }
-.itens:hover::after{
- content: "";
- width: 100%;
- height: 2px;
- position: absolute;
- background-color: #fff;
- bottom: 0;
- left: 0;
+
+.itens:hover::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    background-color: #fff;
+    bottom: 0;
+    left: 0;
 }
+
 .itens a {
     text-decoration: none;
     color: #fff;
     font-weight: 600;
 }
+
 /* INTRO */
 #introducao {
     background-color: #fff;
     height: 700px;
 }
-.container-introducao{
+
+.container-introducao {
     display: flex;
     gap: 40px;
-    background-color: #000; 
-    align-items: center;   
+    background-color: #000;
+    align-items: center;
     justify-content: center;
     height: 600px;
     flex-wrap: wrap;
 }
+
 .coluna1 {
     max-width: 600px;
     padding-bottom: 100px;
 }
+
 .mensagem {
     font-size: 4rem;
     align-self: center;
@@ -62,38 +73,46 @@ img {
     font-weight: bold;
     padding-bottom: 2rem;
 }
+
 .subscricao {
     color: #bcbaba;
     font-size: 1.6rem;
     line-height: 2.4rem;
     padding-bottom: 1.5rem;
 }
-span{
+
+span {
     color: #f2a515;
 }
-.botao{
+
+.botao {
     display: inline-block;
     text-decoration: none;
     color: #000;
     background-color: #f2a515;
     border-radius: 5px;
-    padding:  15px 30px;
+    padding: 15px 30px;
     font-size: 25px;
     text-transform: uppercase;
     font-weight: 700;
     transition: .3s;
 }
-.botao:hover{
+
+.botao:hover {
     background-color: #f79902;
     opacity: 0.6;
 }
+
 .coluna2 img {
     height: 700px;
-    max-width: 100%;
+    max-width: 560px;
     padding-left: 60px;
+    object-fit:cover ;
+    object-position: center;
 }
+
 /* PARTE 2 */
-#bikes{
+#bikes {
     max-width: 1200px;
     margin: 10px auto 35px auto;
     display: flex;
@@ -101,54 +120,64 @@ span{
     padding-bottom: 160px;
     position: relative;
 }
-.titulos{
+
+.titulos {
     font-size: 2.7rem;
     display: block;
     max-width: 1300px;
     text-align: center;
-    margin:3rem;
+    margin: 3rem;
 }
-.nome-bike{
+
+.nome-bike {
     font-size: 35px;
     padding: 20px;
 }
-.valor-bike{
+
+.valor-bike {
     color: #6d6b6b;
     font-weight: bold;
     padding: 0px 20px;
 }
-.imagens{
+
+.imagens {
     position: relative;
+    border: 1px solid #bcbaba;
 }
-.imagens a{
+
+.imagens a {
     text-decoration: none;
     color: #000;
 }
-.imagens::before{
+
+.imagens::before {
     content: "";
     width: 15px;
     height: 8px;
     position: absolute;
     background-color: #f4ad14;
-    left:0px;
-    top:88%;
+    left: 0px;
+    top: 88%;
     transition: .3s;
 }
-.imagens:hover::before{
+
+.imagens:hover::before {
     content: "";
     width: 20px;
     height: 8px;
     position: absolute;
     background-color: #f4ad14;
-    left:0px;
-    top:88%;
+    left: 0px;
+    top: 88%;
 }
+
 /* PARTE 3 */
-#tecnologia{
+#tecnologia {
     background-color: #000;
     margin-bottom: 8rem;
 }
-.container{
+
+.container {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
@@ -156,24 +185,28 @@ span{
     gap: 40px;
     position: relative;
 }
-h4{
+
+h4 {
     text-transform: uppercase;
     color: #6d6b6b;
     font-size: 25px;
     padding-bottom: 20px;
 }
-.flex{
+
+.flex {
     max-width: 600px;
     margin-top: 40px;
     padding-right: 25px;
 }
-.imagem-tecnologia img{
+
+.imagem-tecnologia img {
     max-width: 600px;
     height: 1000px;
     position: relative;
-    top:-60px
+    top: -60px
 }
-.link{
+
+.link {
     color: #f2a515;
     text-decoration: none;
     font-size: 25px;
@@ -181,84 +214,109 @@ h4{
     position: relative;
     transition: .3s;
 }
-.link:hover{
-    color:#fff
+
+.link:hover {
+    color: #fff
 }
-.link:hover::after{
+
+.link:hover::after {
     background-color: #fff;
-    content:"";
+    content: "";
     width: 100%;
     height: 5px;
     position: absolute;
-    top:32px;
+    top: 32px;
     left: 0px;
 }
-.link::after{
+
+.link::after {
     content: "";
     width: 100%;
     height: 5px;
     position: absolute;
     background-color: #f2a515;
-    top:32px;
+    top: 32px;
     left: 0px;
 }
-.item1,.item2{
+
+.item1,
+.item2 {
     margin-top: 20px;
 }
-.grid-container{
+
+.grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     color: #fff;
     gap: 20px;
     margin-top: 40px;
 }
-.grid-container p{
+
+.grid-container p {
     color: #6d6b6b;
     line-height: 25px;
     padding-bottom: 20px;
 }
+
 /* PARTE 4 */
-#parceiros{
-   margin-bottom: 5rem;
+#parceiros {
+    margin-bottom: 5rem;
 }
-.imagens-1{
-  display: grid;
-  max-width: 1400px;
-  grid-template-columns: repeat(4,1fr);
-  margin: 0 auto;
-  list-style: none;
+
+.imagens-1 {
+    display: grid;
+    max-width: 1400px;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto;
+    list-style: none;
 }
-.imagens-1 li{
+
+.imagens-1 li {
     padding: 32px;
     text-align: center;
 }
-.parceiro-1,.parceiro-2,.parceiro-3,.parceiro-2,.parceiro-4{
-    border-bottom: 1px solid rgba(188,186,186,0.4);
+
+.parceiro-1,
+.parceiro-2,
+.parceiro-3,
+.parceiro-2,
+.parceiro-4 {
+    border-bottom: 1px solid rgba(188, 186, 186, 0.4);
 }
-.parceiro-1,.parceiro-2,.parceiro-3,.parceiro-5,.parceiro-6,.parceiro-7{
-    border-right: 1px solid rgba(188,186,186,0.4);
+
+.parceiro-1,
+.parceiro-2,
+.parceiro-3,
+.parceiro-5,
+.parceiro-6,
+.parceiro-7 {
+    border-right: 1px solid rgba(188, 186, 186, 0.4);
 }
+
 /* DEPOIMENTOS */
-#depoimento{
+#depoimento {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     background-color: #000;
 }
-.img-depoimento img{
+
+.img-depoimento img {
     width: 100%;
     height: 524px;
     object-fit: cover;
     object-position: center;
 }
-.texto{
+
+.texto {
     display: flex;
     align-items: end;
-    flex-direction: column; 
+    flex-direction: column;
     filter: brightness(1.0);
     background-color: #f2bb05;
     max-height: 524px;
 }
-.texto-1{
+
+.texto-1 {
     margin-top: auto;
     padding: 40px 60px 30px 0px;
     font-style: italic;
@@ -271,29 +329,34 @@ h4{
     font-weight: 600;
     padding: 0px 60px 60px 0;
 }
+
 /* SEGUROS */
-.bglight{
+.bglight {
     padding: 70px 0;
     background-color: #101010;
 }
-.bglight .titulos{
+.bglight .titulos {
     color: #fff;
     padding-bottom: 30px;
 }
-#seguros{
+#seguros {
     display: grid;
     gap: 100px;
     grid-template-columns: 1fr 1fr;
     max-width: 1200px;
     margin: 50px auto 70px auto;
 }
-.seguro,.seguro-2{
+
+.seguro,
+.seguro-2 {
     display: grid;
     grid-template-columns: 1fr auto;
     background-color: #000;
     padding: 20px;
 }
-.seguro a, .seguro-2 a{
+
+.seguro a,
+.seguro-2 a {
     display: inline-block;
     text-decoration: none;
     text-transform: uppercase;
@@ -304,68 +367,337 @@ h4{
     margin: 15px 0 0 15px;
     transition: .3s;
 }
-.seguro a:hover,.seguro-2 a:hover{
+
+.seguro a:hover,
+.seguro-2 a:hover {
     opacity: 0.6;
 }
-.seguro img,.seguro-2 img{
+
+.seguro img,
+.seguro-2 img {
     padding-right: 10px;
 }
-.seguro ul, .seguro-2 ul{
+
+.seguro ul,
+.seguro-2 ul {
     padding-left: 15px;
 }
-.seguro li,.seguro-2 li{
+
+.seguro li,
+.seguro-2 li {
     color: #fff;
     font-weight: bold;
     padding: 10px 0;
     list-style: none;
 }
-.valor span{
+
+.valor span {
     display: block;
-}  
-.principal{
+}
+
+.principal {
     font-size: 25px;
     font-weight: 600;
     color: #fff !important;
 }
-.valor span{
+
+.valor span {
     color: #938f8f;
 }
-.seguro-2{
+
+.seguro-2 {
     transform: scale(1.2);
 }
-.seguro-2 h4{
+
+.seguro-2 h4 {
     color: #f2bb05 !important;
 }
-.seguro-2 a{
+
+.seguro-2 a {
     background-color: #f2bb05;
 }
+
 /* FOOTER */
-#footer{
+#footer {
     display: flex;
     justify-content: center;
-    gap:140px;
+    gap: 140px;
     background-color: #000;
     padding: 40px;
 }
-.titulo-contato,.titulo-informacoes{
+
+.titulo-contato,
+.titulo-informacoes {
     color: #fff;
     text-transform: uppercase;
     margin-bottom: 10px;
     font-size: 25px;
 }
-.itens-contato,.itens-informacoes{
+
+.itens-contato,
+.itens-informacoes {
     color: #938f8f;
-    padding:10px 0;
+    padding: 10px 0;
     font-weight: 700;
 }
-.itens-informacoes{
+
+.itens-informacoes {
     text-decoration: none;
     display: block;
     transition: .3s;
 }
-.redes{
+.redes {
     padding-right: 30px;
 }
-.itens-informacoes:hover{
+
+.itens-informacoes:hover {
     color: #fff !important;
 }
+
+/* RESPOSIVIDADE */
+@media(max-width:799.99px){
+    .imagem-tecnologia img {
+        display: none;
+    }
+     /* HEADER */
+     .container-introducao{
+        justify-content: start;
+        padding: 20px;
+        gap: 20px;
+     }
+    .mensagem{
+        max-width: 600px !important;
+        padding-bottom: 1rem;
+        font-size: 2.4rem;
+    }
+    .subscricao{
+        font-size: 1.2rem;
+    }
+    .coluna1{
+        padding-top: 2rem;
+        padding-bottom: 0;
+    }
+    .coluna2 img{
+        padding: 0px !important;
+        height: 450px;
+        width: 750px;
+        object-position: center;
+    }
+    .titulos{
+        text-align: start;
+        padding: 15px 0;
+        font-size: 2rem;
+    }
+    #bikes{
+        padding-bottom: 40px;
+    }
+    .imagens::before{
+        top:80%;
+    }
+    #tecnologia{
+        margin-bottom: 4rem;
+    }
+}
+@media(max-width:700px) {
+    /* HEADER */
+    .mensagem{
+        max-width: 500px !important;
+        padding-bottom: 1rem;
+    }
+    .coluna1{
+        padding-top: 2rem;
+        padding-bottom: 0;
+    }
+    .coluna2 img{
+        padding: 0px !important;
+        height: 400px;
+        width: 650px;
+        padding-right: 20px;
+    }
+    /* BIKES */
+    #bikes{
+        flex-direction: column;
+        justify-items: center;
+        padding: 30px;
+    }
+    #bikes .valor-bike{
+        font-size: 20px;
+        padding: 0px 20px 20px 20px;
+}
+.imagens::before{
+    top:85%;
+}
+.imagens img{
+        width: 636px;
+        height: 450px;
+        object-fit: cover;
+        object-position: center;
+    }
+    /* TECNOLOGIA */
+    .flex h4{
+        font-weight: bold;
+        font-size: 18px;
+    }
+    .mensagem{
+        font-size: 35px !important;
+        max-width: 220px;
+    }
+    .subscricao{
+        font-size: 1.2rem;
+    }
+    .grid-container h3{
+        padding: 15px 0;
+    }
+    .grid-container p{
+       color: #bcbaba;
+       letter-spacing: 1px;
+    }
+    .imagem-tecnologia img {
+        display: none;
+    }
+    /* PARCEIROS */
+    .imagens-1{
+        grid-template-columns: repeat(2,1fr);
+    }
+    /* DEPOIMENTO */
+    .img-depoimento img{
+        height: 224px;
+    }
+    .texto{
+        height: 324px;
+        align-items: center;
+    }
+    .texto-1{
+        display: flex;
+        align-self: center;
+        font-weight: 300 !important;
+        padding: 0 !important;
+        font-size: 30px !important;
+    }
+    .texto p{
+        font-size: 20px;
+    }
+    /* Seguros */
+    #seguros {
+        grid-template-columns: 1fr;
+        padding: 20px;
+        gap: 40px;
+        margin: 50px auto 0px auto;
+    }
+    .seguro-2 {
+        transform: none;
+    }
+    #footer{
+        gap: 40px;
+    }
+    }
+    @media(max-width:500px){
+        #header{
+            justify-content: start;
+        }
+        .logo, #header .links{
+            padding: 10px 20px;
+        }
+        .container-introducao{
+            padding: 20px;
+        }
+        .subscricao{
+            line-height: 2rem;
+        }
+        .coluna2 img{
+        height: 290px;
+        width: 350px;
+    }
+        .titulos{
+            text-align: start;
+            font-size: 1.6rem;
+            margin-bottom: 0;
+        }
+        #tecnologia{
+            padding: 20px;
+            margin-bottom: 0;
+        }
+        .texto{
+             padding-bottom: 25px;
+        }
+        .texto-1{
+            padding: 29px !important;
+        }
+        #seguros{
+            margin: 0 auto;
+        }
+        .rodape{
+            display: none;
+        }
+        #footer{
+            flex-wrap: wrap;
+            justify-content: start;
+        }
+    }
+    @media(max-width:400px){
+        #header{
+            gap: 20px;
+        }
+        .container{
+            display: block;
+            margin-bottom: 50px;
+        }
+        #header .links{
+            padding: 0 20px !important;
+            gap: 1.5rem;
+            
+        }
+        .texto{
+            padding-bottom: 25px;
+        }
+    }
+    @media(min-width:800px) and (max-width:1200px){
+        .imagem-tecnologia img {
+        display: block;
+        max-width: 500px;
+        }
+        #seguros{
+            gap:30px;
+            padding: 15px;
+        }
+        .seguro-2{
+            transform:none;
+        }
+        .texto-1{
+            padding-left: 60px !important;
+        }
+        .flex h4{
+        font-weight: bold;
+        font-size: 18px;
+    }
+    .container{
+        padding: 20px;
+    }
+    .mensagem{
+        font-size: 45px !important;
+        max-width: 350px;
+    }
+    .subscricao{
+        font-size: 1.2rem;
+    }
+    .grid-container p{
+       color: #bcbaba;
+    }
+    .container-introducao{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 20px;
+    }
+    .coluna2 img{
+        padding: 0;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 5px;
+    }
+    }
+    @media (max-width:1999px) {
+        .seguro-2{
+            transform:none;
+        }
+    }
+    
