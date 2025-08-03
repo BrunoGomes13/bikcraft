@@ -1,6 +1,5 @@
-
 body{
-    background-color: #e9e7e7;
+    background-color: #f1f1f1;
 }
 .titulos{
     margin: 2rem 0 4rem 0;
@@ -9,6 +8,7 @@ body{
     color: #fff;
     background: linear-gradient(to top, #e9e7e7 30%, #181818 0%);
     width: 100% !important; 
+    max-width: 100% !important;
     padding: 20px 0 60px 0;
 }
 #contatos{
@@ -29,8 +29,8 @@ body{
     padding-bottom: 20px;
  } 
 .contatos-col img{
- width: 20px;
- height: 20px;
+ width: auto;
+ height: auto;
 }
 .contatos-col span{
     padding: 35px 20px 20px 20px;
@@ -44,6 +44,7 @@ body{
 .contatos-col .itens-contato,.itens-contato3{
     display: grid;
     grid-template-columns: 20px 150px;
+    align-items: center;
     gap: 10px;
 }
 .itens-contato3{
@@ -162,4 +163,95 @@ input[type="submit"]:hover{
     background-color: #e7e5e5;
     top: 72%;
     right: 25%;
+}
+/* RESPONSIVIDADE */
+@media(max-width:700px) {
+    .bgdark{
+         background: linear-gradient(to top, #e9e7e7 60%, #181818 0%);
+    }
+    #contatos{
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+        max-width: 90%;
+    }
+    #lojas{
+        grid-template-columns: 1fr;
+    }
+    .inputs{
+        flex-direction: column;
+    }
+    .contatos-col2{
+        padding: 20px;
+        border:1px solid #938f8f
+    }
+    input[type="submit"]{
+        width:60%;
+    }
+    .contatos-col{
+        max-width:90%;
+        padding: 20px;
+        height: 430px;
+    }
+    .contatos-col h3{
+        font-size: 25px;
+        padding-bottom: 30px;
+    }.item img{
+        height: 30px;
+    }
+    .item{
+        padding: 0;
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    .contatos-col .itens-contato,.itens-contato3{
+        grid-template-columns: 30px 190px;
+    }
+    .titulos{
+        margin: 2rem 0 1.5rem 1.5rem;
+        font-size: 2rem;
+    }
+    .cinza{
+        font-weight: 100px;
+    }
+    #lojas .valor-bike{
+        font-size: 18px;
+    }
+    .loja-2::after,.loja-2::before,.valor-bike::after,.valor-bike::before{
+        display: none;
+    }
+}
+@media (min-width:701px) and (max-width:800px){
+     #contatos{
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+        max-width: 90%;
+    }
+    #lojas{
+        grid-template-columns:1fr 1fr;
+        padding: 20px;
+    }
+    .titulos{
+        margin: 2rem 0 1.5rem 1.5rem;
+        font-size: 2rem;
+    }
+     .contatos-col{
+        max-width:89%;
+     }
+     .loja-2::after,.loja-2::before,.valor-bike::after,.valor-bike::before{
+        display: none;
+    }
+}
+@media (min-width:801px) and (max-width:1300px){
+    #contatos{
+        grid-template-columns: 1.5fr 2fr;
+        margin: 0 auto;
+        max-width: 90%;
+    }
+     #lojas{
+        grid-template-columns:1fr 1fr;
+        padding: 20px;
+    }
+    .loja-2::after,.loja-2::before,.valor-bike::after,.valor-bike::before{
+        display: none;
+    }
 }

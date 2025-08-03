@@ -117,6 +117,61 @@
 .bgdark{
     color: #fff;
     background:linear-gradient(to right, #fff 30%,#000 0%);
-    width: 1200px !important;
+    max-width: 1200px !important;
     padding: 60px 0;
+}
+/* RESPONSIVIDADE */
+@media (max-width:600px){
+    #header{
+        gap: 20px;
+    }
+    #header .links{
+        padding-left: 20px !important;
+    }
+    #parte-1{
+        height: 150px;
+    }
+    #bikes{
+        padding-top: 20px !important;
+        margin-bottom: 50px !important;
+    }
+    .coluna-1 img{
+        width: 100%; 
+        height: auto;
+    }
+    .imagens{
+        display: flex !important;
+        flex-direction: column !important;
+        width: 110%;
+    }
+    ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 0 !important;
+    }
+    ul li img{
+        height: auto !important;
+        width: 15% !important;
+    }
+    .nome-bike{
+        font-size: 30px;
+    }
+    .coluna-2 .valor-bike{
+        font-weight: 100 !important;
+        letter-spacing: 1.5px;
+    }
+    .bgdark{
+       background:linear-gradient(to right, #fff 0%,#000 0%);
+    }
+    .cinza{
+        font-size: 18px;
+        text-transform: lowercase;
+    }
+    .coluna-2 a{
+        left:15px;
+       top:102%;
+    }
+    .coluna-2 .nome-bike,.valor-bike{
+        padding-left: 10px !important;
+    }
 }
