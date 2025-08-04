@@ -175,3 +175,79 @@ body{
 #footer{
     padding-top: 9rem !important;
 }
+/* RESPONSIVIDADE */
+@media (max-width:700px){
+    #bicicleta .imagens{
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+    }
+    .fotos-secundaria{
+        grid-template-columns: 1fr;
+    }
+    .fotos-secundaria img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+    #bicicleta .coluna-1{
+        padding: 20px;
+    }
+    .coluna-2{
+        grid-row: 1/1;
+        padding-left: 0 !important;
+    }
+    .coluna-2 img{
+        width: auto !important;
+        height: auto !important;
+    }
+    #seguro .imagens{
+        flex-direction:column-reverse !important ;
+    }
+    #seguro .container{
+        height: auto !important;
+    }
+    #seguro{
+        background: linear-gradient(to bottom, #fff 0%, #1f1f1f 0%);;
+    } 
+    #seguro .coluna-1 img{
+        height: auto !important;
+        width: 100% !important;
+        padding-left: 18px;
+    }
+    #seguro .coluna-1{
+        max-width: 90%;
+    }
+    #seguro .coluna-2{
+        padding: 20px !important;
+    }
+    #bikes .imagens img{
+        width: auto !important;
+        height: auto !important;
+    }
+    .imagens{
+        width: 100% !important;
+    }
+    ul{
+        grid-template-columns: 1fr !important;
+    }
+    .estoque p{
+        padding: 0;
+    }
+    .link-compra{
+        padding: 15px;
+    }
+    .coluna-2 .titulos h2{
+        font-size: 30px;
+    }
+    #bicicleta .coluna-2 .valor-bike{
+        padding-left: 20px !important;
+    }
+    .titulos .cinza{
+        text-transform: uppercase;
+    }
+    .ficha ul{
+        margin: 0 25px;
+    }
+    #footer{
+        padding-top: 4rem !important;
+    }
+    }
